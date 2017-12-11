@@ -41,7 +41,7 @@ function onDeviceReady() {
 	console.log("device ready");
 	//setup access to filesystem
 	//window.requestFileSystem(LocalFileSystem.PERSISTENT, 0, gotFS, fail);
-    window.resolveLocalFileSystemURL(cordova.file.externalDataDirectory, gotFS, fail);
+    window.resolveLocalFileSystemURL(cordova.file.dataDirectory, gotFS, fail);
 }
 
 //get access to file and CREATE if does not exists
